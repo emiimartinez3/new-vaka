@@ -1,7 +1,7 @@
 const pintarCarrito = () => {
 
     modalContainer.innerHTML = "";
-    modalContainer.style.display = "block"
+    modalContainer.style.display = "flex"
 
     const modalHeader = document.createElement("div");
     modalHeader.className = "modalHeader"
@@ -43,7 +43,7 @@ const pintarCarrito = () => {
         product.cantidad--;
       }
       pintarCarrito();
-     })
+     });
 
      let sumar = carritoContent.querySelector(".sumar")
      sumar.addEventListener("click", () => {
