@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./imgvaka/vakaicon.jpeg">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+
+<script type="text/javascript">
+  emailjs.init('BMpWvgIoxdinxxWIK')
+</script>
+    <title>Contacto</title>
+</head>
+<body>
+    <nav class="nav">
+        <h1 class="nav-logo">VAKA & co.</h1>
+        
+        <ul class="nav-links">
+            <li><a href="./index.html"class="nav-item">PRODUCTOS</a></li>
+            <li><a href="./nosotros.html"class="nav-item">NOSOTROS</a></li>
+            <li><a href="./contacto.html"class="nav-item">CONTACTO</a></li>
+            <li><a href="#"><i class='bx bx-shopping-bag nav-item extra' id="nav-cart"></i></a> <span id="cantidadCarrito" class="cantidad-carrito"></span> </li>            
+        </ul>
+        
+    </nav>
+    <header class="producto-header">
+    </header>
+
+    <section class="contacto">
+        <form id="form">
+            <div class="field">
+              <label for="from_name">Nombre</label>
+              <input type="text" name="from_name" id="from_name" required>
+            </div>
+            <div class="field">
+              <label for="email_id">Email</label>
+              <input type="text" name="email_id" id="email_id" required>
+            </div>
+            <div class="field">
+                <label for="message">Mensaje</label>
+                <input type="text" name="message" id="message" required>
+            </div>
+            
+          
+            <input type="submit" id="button" value="Enviar Mensaje" >
+          </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/contacto.js"></script>
+</body>
+</html>
